@@ -2,3 +2,5 @@ BoldAsFont=-1
 Transparency=medium
 Columns=90
 Rows=50
+Locale=de_DE
+Charset=UTF-8

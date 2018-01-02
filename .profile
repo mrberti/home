@@ -30,4 +30,3 @@ fi
 if [ -d "$HOME/python" ] ; then
     PATH="$HOME/python:$PATH"
 fi
-
