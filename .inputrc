@@ -55,7 +55,7 @@ $if Bash
 
   # Filename completion/expansion
   set completion-ignore-case on
-  set show-all-if-ambiguous on
+  #set show-all-if-ambiguous on
 
   # Expand homedir name
   #set expand-tilde on
@@ -74,11 +74,11 @@ $if Bash
 
   # from https://wiki.archlinux.org/index.php/Readline
   # Color files by types
-  set colored-stats On
+  #set colored-stats On
   # Append char to indicate type
-  set visible-stats On
+  #set visible-stats On
   # Mark symlinked directories
-  set mark-symlinked-directories On
+  #set mark-symlinked-directories On
   # Color the common prefix
   set colored-completion-prefix On
   # Color the common prefix in menu-complete
