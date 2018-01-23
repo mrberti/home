@@ -14,7 +14,7 @@ for file in `cat files.txt`; do
 	
 	if [ -e $file ]; then
 		echo $file
-		diff -u $file ../$file
+		diff -u $file ../$file | patch
 	else
 		echo next...
 	fi

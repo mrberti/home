@@ -20,4 +20,4 @@ fi
 echo $file_to_read
 
 echo "patching $file_to_update, source file: $file_to_read"
-diff -u $file_to_update $file_to_read
+diff -u $file_to_update $file_to_read | patch
