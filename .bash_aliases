@@ -30,6 +30,7 @@ alias LL='LS -lh'
 alias LA='LS -A'
 alias LAL='LS -Al'
 alias LLA='LAL'
+alias LSLA='LS -lA'
 
 # create a alias for deleting to trashbin
 alias del='mv -t ~/.trash'
@@ -48,3 +49,7 @@ fi
 
 # linux editor aliases
 alias g='gedit'
+
+function loc() {
+	locate $1 | grep $1
+}
