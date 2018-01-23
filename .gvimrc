@@ -1,5 +1,5 @@
-"set co=130
-"set lines=50
+set co=130
+set lines=50
 
 colorscheme evening
 
