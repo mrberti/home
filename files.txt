@@ -1,8 +1,6 @@
 .bash_aliases
 .bashrc
-.conkyrc
 .gitconfig
-.gitignore
 .gvimrc
 .minttyrc
 .profile
