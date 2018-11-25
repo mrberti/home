@@ -3,11 +3,15 @@
 	email = simon.bertling@gmx.de
 [core]
 	editor = vim
+	autocrlf = input
+# on windows:: autocrlf = true
 [color]
 	ui = true
 [alias]
 	ci = commit
+	co = checkout
 	st = status -s
 	glog = log --graph
 [push]
 	default = matching
+
