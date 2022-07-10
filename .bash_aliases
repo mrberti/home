@@ -53,3 +53,7 @@ alias g='gedit'
 function loc() {
 	locate $1 | grep $1
 }
+
+function ssht() {
+        /usr/bin/ssh -t "$@" "tmux new -As ssh_tmux";
+}
