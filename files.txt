@@ -1,7 +1,0 @@
-.bash_aliases
-.bashrc
-.gitconfig
-.gvimrc
-.minttyrc
-.profile
-.vimrc
