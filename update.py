@@ -64,14 +64,23 @@ def main():
         metavar=["\n", "\r\n", "\r"],
         help="Define the line separator to use. Defaults to `os.linesep`. Hint: When using bash, use $'\\n' to specify.",
     )
+    parser.add_argument(
+        "-e",
+        "--encoding",
+        type=str,
+        default="ISO-8859-1",
+        help="Used encoding",
+    )
 
     args = parser.parse_args()
     files = args.files
     force = args.force
     outpath = Path(args.output)
     linesep = args.linesep
+    encoding = args.encoding
     print(f"Using line separator: {linesep!r}.")
     print(f"Using {outpath.absolute()} as output directory.")
+    print(f"Using encoding '{encoding}'.")
 
     for filename in files:
         outfile: Path = outpath / filename
@@ -81,7 +90,7 @@ def main():
                     continue
         try:
             with urllib.request.urlopen(URL_TEMPLATE.format(filename=filename)) as req:
-                data = req.read().decode("utf-8")
+                data = req.read().decode(encoding)
             print(f"Writing {filename} to {outfile.absolute()}")
             with open(outfile, "w", newline=linesep) as f_out:
                 f_out.write(data)
